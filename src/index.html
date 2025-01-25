@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPEXY</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body>
+
+<!-- ! Start navbar -->
+<nav class="bg-white border-gray-200 ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between py-6 px-2 md:px-0 container">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="images/asset 0.png" class="h-7" alt="Logo" />
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button class="mode-btn rounded  text-gray-900 px-6 py-2 bg-gray-100 dark:bg-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-600 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-700 hover:border-gray-200">Light Mode</button>
+        <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+       <ul class="font-normal mx-auto flex flex-col p-4  md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+              <li>
+                <a href="#" class="block py-2 px-1 text-gray-900 rounded-sm hover:text-blue-600  dark:text-gray-300  dark:hover:text-[#057A55] font-bold" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-1 text-gray-900 rounded-sm hover:text-blue-600 dark:text-gray-300  dark:hover:text-[#057A55]">About</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-1 text-gray-900 rounded-sm hover:text-blue-600 dark:text-gray-300  dark:hover:text-[#057A55]">Contact</a>
+              </li>
+            </ul>
+    </div>
+    </div>
+</nav>
+<!-- ! End navbar -->     
+
+    
+<main>
+<!-- ? Slider -->
+<div id="controls-carousel" class="relative w-full" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src="images/testtwo.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="images/christopher-gower-m_HRfLhgABo-unsplash.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="images/bg2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="images/ales-nesetril-Im7lZjxeLhg-unsplash-EFNYJM67.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="images/fabian-irsara-67l-QujB14w-unsplash.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30">
+          <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </span>
+      </button>
+      <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30">
+          <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </span>
+      </button>
+</div>
+
+<section class="tool py-12 text-center  bg-gray-100 text-gray-950  border border-gray-400 dark:bg-gray-950  dark:border-gray-100"">
+<div class="container">
+    <div class="main-title dark:text-gray-100">
+    <h2 class="text-[48px]">Tools</h2>
+    <p >Lorem ipsum dolor sit amet consectetur !</p>
+    </div>
+    <div class="grid sm:grid-cols-2  md:grid-cols-3 gap-x-1 gap-y-5 py-12">
+        <div class="card">
+        <span class="flex items-center mx-auto justify-center size-10 bg-red-200 rounded-full absolute start-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+            <i class="fa-solid fa-anchor-circle-exclamation"></i>
+        </span>
+        <h3 class="text-2xl">Product</h3>
+        <div class="h-px w-10 bg-gray-950 my-2 mx-auto"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <div class="card">
+            <span class="flex items-center mx-auto justify-center size-10 bg-red-200 rounded-full absolute start-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+                <i class="fa-solid fa-h-square"></i>
+            </span>
+            <h3 class="text-2xl">Product</h3>
+            <div class="h-px w-10 bg-gray-950 my-2 mx-auto"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div>
+        <div class="card">
+                <span class="flex items-center mx-auto justify-center size-10 bg-red-200 rounded-full absolute start-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+                    <i class="fa-solid fa-jar-wheat"></i>
+                </span>
+                <h3 class="text-2xl">Product</h3>
+                <div class="h-px w-10 bg-gray-950 my-2 mx-auto"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+        <div class="card">
+                    <span class="flex items-center mx-auto justify-center size-10 bg-red-200 rounded-full absolute start-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+                        <i class="fa-solid fa-ladder-water"></i>
+                    </span>
+                    <h3 class="text-2xl">Product</h3>
+                    <div class="h-px w-10 bg-gray-950 my-2 mx-auto"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    </div>
+        <div class="card">
+                        <span class="flex items-center mx-auto justify-center size-10 bg-red-200 rounded-full absolute start-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+                            <i class="fa-solid fa-icicles"></i>
+                        </span>
+                        <h3 class="text-2xl">Product</h3>
+                        <div class="h-px w-10 bg-gray-950 my-2 mx-auto"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        </div>
+        <div class="card">
+                            <span class="flex items-center mx-auto justify-center size-10 bg-red-200 rounded-full absolute start-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+                                <i class="fa-solid fa-wrench"></i>
+                            </span>
+                            <h3 class="text-2xl">Product</h3>
+                            <div class="h-px w-10 bg-gray-950 my-2 mx-auto"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            </div>
+    </div>
+</div>
+</section>
+</main>
+
+<footer class="footer bg-[#212529] text-white text-center flex justify-between items-center p-12">
+    <div><img src="./images/asset 18.png" alt="" class="cursor-pointer"></div>
+    <div>
+        <i class="fa-brands px-2 fa-facebook cursor-pointer"></i>
+        <i class="fa-brands px-2 fa-twitter cursor-pointer"></i>
+        <i class="fa-brands px-2 fa-linkedin cursor-pointer"></i>
+        <i class="fa-brands px-2 fa-youtube cursor-pointer"></i>
+    </div>
+</footer>
+
+
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

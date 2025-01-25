@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components
+{
+    .card
+    {
+        @apply relative bg-white rounded-md border border-black py-8 px-6 text-center
+    }
+}
